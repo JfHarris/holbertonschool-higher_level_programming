@@ -6,7 +6,7 @@ def print_matrix_integer(matrix=[[]]):
                 if total == row[0]:
                     print("{:d}".format(total), end="")
                 else:
-                    print("{:d}".format(total), end="")
+                    print(" {:d}".format(total), end="")
             print()
     else:
         print()
