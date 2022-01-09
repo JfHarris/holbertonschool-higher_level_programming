@@ -7,3 +7,4 @@ A README.md file, at the root of the folder of this project, is mandatory
 Your code should use the PEP 8 style (version 1.7.*)
 All your files must be executable
 The length of your files will be tested using wc
+VS code test
