@@ -7,6 +7,6 @@ def print_matrix_integer(matrix=[[]]):
                     print("{:d}".format(total), end="")
                 else:
                     print("{:d}".format(total), end="")
-                print()
-            else:
-                print()
+            print()
+    else:
+        print()
