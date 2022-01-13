@@ -5,13 +5,10 @@ Making a class named Square with a private instance attribute
 Defining function within class that finds the size of square
 """
 
+
 class Square:
     """
     Instantiating size and making it a private variable
-    Raise type error or value error if needed
-    Creating method that finds the square of number
-    Using setter
-    Using getter
     """
 
     def __init__(self, size=0):
