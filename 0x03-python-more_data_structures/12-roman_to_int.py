@@ -17,6 +17,6 @@ def roman_to_int(roman_string):
                             else:
                                 total += z
             else:
-                if roman_string[x] == x:
+                if roman_string[x] == y:
                     total += z
     return (total)
