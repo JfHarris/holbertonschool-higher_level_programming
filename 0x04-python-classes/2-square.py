@@ -2,14 +2,13 @@
 
 """
 Making class named square with private instance attribute
-Definie function to find size
 """
+
 
 class Square:
 
     """
     Instantiating method to check if size is an greater than zero
-    Creating method to return size
     """
 
     def __init__(self, size=0):
