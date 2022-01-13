@@ -3,6 +3,7 @@
 Making class named square with private instance attribute
 """
 
+
 class Square:
     """
     instantiating variables self and size
