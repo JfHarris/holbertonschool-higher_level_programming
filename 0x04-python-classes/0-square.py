@@ -4,6 +4,7 @@
 Making a class name Square
 """
 
+
 class Square:
     """
     class by name of Square
