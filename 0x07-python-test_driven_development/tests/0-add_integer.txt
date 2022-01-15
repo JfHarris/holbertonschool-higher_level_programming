@@ -24,3 +24,69 @@ Using the module:
    	     ...
    TypeError: add_integer() missing 1 required positional argument: 'b'
 
+Adding two ints:
+
+   Adding two positive numbers
+   ------------------
+   >>> add_integer(1, 4)
+   5
+
+   Adding two negative numbers
+   ___________________________
+   >>> add_integer(-3, -4)
+   -7
+
+   Adding one neg one pos number
+   _____________________________
+   >>> add_integer(-3, 4)
+   1
+
+   Adding one pos one neg number
+   _____________________________
+   >>> add_integer(3, -1)
+   2
+
+   Adding two pos floats
+   _____________________
+   >>> add_integer(97.2, 3.9)
+   100
+
+   Adding one float and one negative float
+   _______________________________________
+   >>> add_integer(100.1, -2.9)
+   98
+
+   Adding one negative float and one positive float
+   ________________________________________________
+   >>> add_integer(-1.9, 101.1)
+   99
+
+Adding two negative floats
+   __________________________
+   >>> add_integer(-2.9, -96.2)
+   -98
+
+   One positive float, one positive integer
+   ________________________________________
+   >>> add_integer(10.9, 5)
+   15
+
+   One positive integer, one positive float
+   ________________________________________
+   >>> add_integer(1, 1.9)
+   2
+
+   One neg int, one pos float
+   ________________________
+   >>> add_integer(-2, 10.6)
+   8
+
+   One neg float, one pos int
+   __________________________
+   >>> add_integer(-1.9, 2)
+   1
+
+   One pos float, one neg int
+   __________________________
+   >>> add_integer(10.9, -20)
+   -10
