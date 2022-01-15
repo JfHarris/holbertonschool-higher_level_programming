@@ -1,0 +1,26 @@
+``add_integer`` module
+===================
+
+Using ``add``
+-------------
+
+Import "add" from "add_integer" main file
+
+   >>> add_integer =  __import__('0-add_integer').add_integer
+
+Using the module:
+
+   Adding nothing to nothing
+   _____________________________
+   >>> add_integer()
+   Traceback (most recent call last):
+   	     ...
+   TypeError: add_integer() missing 2 required positional arguments: 'a' and 'b'
+
+   Adding one int with nothing
+   _____________________________
+   >>> add_integer(2, )
+   Traceback (most recent call last):
+   	     ...
+   TypeError: add_integer() missing 1 required positional argument: 'b'
+
