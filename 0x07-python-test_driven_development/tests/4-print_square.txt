@@ -19,10 +19,6 @@ Using print_square:
       #######
       #######
 
-      Passing float
-      ____________________
-      >>> print_square(1.7)
-
 
       Passing multiple args
       ______________________________
