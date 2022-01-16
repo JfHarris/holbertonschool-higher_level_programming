@@ -19,6 +19,7 @@ def text_indentation(text):
             continue
         if char is "." or char is "?" or char is ":":
             print(char)
+            print()
             punc = "\n"
         else:
             print(char, end="")
