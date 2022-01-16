@@ -3,8 +3,6 @@
 Add numbers.
 """
 
-from re import M
-
 
 def add_integer(a, b=98):
     """
