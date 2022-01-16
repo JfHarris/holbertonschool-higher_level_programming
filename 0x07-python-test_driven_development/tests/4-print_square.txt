@@ -1,0 +1,32 @@
+``print_square`` module
+=======================
+
+Importing ``print_square`` from ``4-print_square``
+	  >>> print_square = __import__('4-print_square').print_square
+
+Using print_square:
+
+      Print out 0 squares
+      ______________________
+      >>> print_square(0)
+
+      Print out 7 x 7 square
+      __________________________
+      >>> print_square(5)
+      #######
+      #######
+      #######
+      #######
+      #######
+
+      Passing float
+      ____________________
+      >>> print_square(1.7)
+
+
+      Passing multiple args
+      ______________________________
+      >>> print_square(7, 1)
+      Traceback (most recent call last):
+      		...
+      TypeError: print_square() takes 1 positional argument but 2 were given
