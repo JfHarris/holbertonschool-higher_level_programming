@@ -3,6 +3,7 @@
 Prints 'My name is" fllowed by a first name
 """
 
+
 def say_my_name(first_name, last_name=""):
     """
     If names are not strings raise error
