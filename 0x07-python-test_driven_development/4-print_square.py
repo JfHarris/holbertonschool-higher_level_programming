@@ -3,6 +3,7 @@
 Print a square made of #
 """
 
+
 def print_square(size):
     """
     Raise errors if needed
