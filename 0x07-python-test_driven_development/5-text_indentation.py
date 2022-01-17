@@ -3,6 +3,7 @@
 Print 2 newlines after instances of  . ? or :
 """
 
+
 def text_indentation(text):
     """
     Print 2 newlines after instances of . ? or :
