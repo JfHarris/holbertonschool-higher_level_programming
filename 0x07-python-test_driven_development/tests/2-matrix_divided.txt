@@ -10,68 +10,49 @@ Importing ``matrix_divided`` from ``2-matrix_divided``
 
 
 Using matrix_divided
-____________________
 
-	>>> matrix_divided([[1, 2, 3], [1, 2, {2: 1}]], 2)
-	Traceback (most recent call last):
-                  ...
-        TypeError: matrix must be a matrix (list of lists) of integers/floats
+	Passing int as div
 
-	div being negative
-	__________________
+	>>> matrix_divided([[1, 7, 9], [2, 3, 4]], 2)
+	[0.5, 3.5, 4.5, 1.0, 1.5, 2.0]
+	>>>
+
+	Div being negative
+
 	>>> matrix_divided([[1, 2], [2, 1]], -2)
 	[-0.5, -1.0, -1.0, -0.5]
 
 	>>> matrix_divided(1, 7, 9)
 	Traceback (most recent call last):
-                  ...
-        TypeError: matrix_divided() takes 2 positional arguments but 3 were given
+
+    TypeError: matrix_divided() takes 2 positional arguments but 3 were given
 
 	Adding extra arguments
-	______________________
+
 	>>> matrix_divided([[1, 2, 3], [4, 9, 15]], 2, 3)
 	Traceback (most recent call last):
-		  ...
+
 	TypeError: matrix_divided() takes 2 positional arguments but 3 were given
 
 	Not passing a list
-	__________________
-	>>> matrix_divided(("hello", 2), 1)
+
+	>>> matrix_divided(("hello", 1), 1)
 	Traceback (most recent call last):
-                  ...
-        TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 	Passing matrix with a list in each row
-	______________________________________
-	>>> matrix_divided([[1, [2, 3]], [2, [5, 10]]], 15)
-	Traceback (most recent call last):
-                  ...
-        TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 	Passing None to the matrix
-	__________________________
+
 	>>> matrix_divided(None, 1)
 	Traceback (most recent call last):
-		  ...
+
 	TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 	Passing None to div
-	___________________
+
 	>>> matrix_divided([[2, 3, 4], [5, 7, 9]], None)
 	Traceback (most recent call last):
-		  ...
+
 	TypeError: div must be a number
-
-	Passing an empty list and div with a value of two
-	_________________________________________________
-	>>> matrix_divided([], 2)
-	Traceback (most recent call last):
-		   ...
-	TypeError: matrix must be a matrix (list of lists) of integers/floats
-
-	Passing an empty 2D array and div with a value of seven
-	_____________________________________________________
-	>>> matrix_divided([[]], 7)
-	Traceback (most recent call last):
-		  ...
-	TypeError: matrix must be a matrix (list of lists) of integers/floats

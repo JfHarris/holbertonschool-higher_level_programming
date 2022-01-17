@@ -1,0 +1,31 @@
+``text_indentation`` module
+=======================
+
+Importing ``text_indentation`` from ``5-text_indentation``
+	  >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Using text_indentation:
+
+	Random punctuation:
+
+	>>> text_indentation("""Testing with pun!ctuatio:on in str.ange places?""")
+
+	Testing with pun!ctuatio:
+
+	on in str.
+
+	ange places?
+
+	Using none of the characters
+
+	>>> text_indentation("These are not the chracters you are looking for!~&*%")
+	These are not the chracters you are looking for!~&*%>>>
+
+	Adding white space around characters
+
+	>>> text_indentation("This has  ?  too much     :     space")
+	This has  ?
+
+	too much     :
+
+	space>>>

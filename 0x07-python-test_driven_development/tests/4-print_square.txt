@@ -7,11 +7,11 @@ Importing ``print_square`` from ``4-print_square``
 Using print_square:
 
       Print out 0 squares
-      ______________________
+
       >>> print_square(0)
 
       Print out 7 x 7 square
-      __________________________
+
       >>> print_square(5)
       #######
       #######
@@ -21,8 +21,15 @@ Using print_square:
 
 
       Passing multiple args
-      ______________________________
+
       >>> print_square(7, 1)
       Traceback (most recent call last):
-      		...
+
       TypeError: print_square() takes 1 positional argument but 2 were given
+
+
+      Passing nothing
+
+      >>> print_square()
+      Traceback (most recent call last):
+      TypeError: print_square() missing 1 required positional argument: 'size'
