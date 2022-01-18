@@ -46,6 +46,7 @@ Adding two ints:
    Adding one negative float and one positive float
 
    >>> add_integer(-1.9, 101.1)
+   100
 
    Adding two negative floats
 
