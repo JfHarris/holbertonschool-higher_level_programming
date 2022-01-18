@@ -11,7 +11,7 @@ class Rectangle:
     class Rectangle
     """
 
-    def __init__(self, height=0, width=0):
+    def __init__(self, width=0, height=0):
         if type(width) is not int:
             raise TypeError("width must be an integer")
         if width < 0:
