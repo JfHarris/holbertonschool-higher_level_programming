@@ -1,4 +1,4 @@
-``Print name module`` module
+``say_my_name`` module
 =============================
 
 Using ``say_my_name`` from ``3-say_my_name``
@@ -28,15 +28,16 @@ Testing say_my_name:
 	String and list
 
 	>>> say_my_name("Eight", [9, 10, 11])
+
 	Traceback (most recent call last):
-    TypeError: last_name must be a string
+
+	TypeError: last_name must be a string
 
 	Passing nothing
 
-	>>> say_my_name( , )
+	>>> say_my_name()
 	Traceback (most recent call last):
 
-	SyntaxError: invalid syntax
 
 	Passing more than 2 arguments
 
