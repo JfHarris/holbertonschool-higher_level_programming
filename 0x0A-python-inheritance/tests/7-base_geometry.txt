@@ -21,24 +21,24 @@ Failed tests:
 
 Testing with int <= 0:
 
-    >>> zed = BaseGeometry()
-    >>> zed.integer_validator("fail", 0)
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("fail", 0)
     Traceback (most recent call last):
 
     ValueError: fail must be greater than 0
 
 Testing method that is not implemented
 
-    >>> methd = BaseGeometry()
-    >>> methd.area()
+    >>> bg = BaseGeometry()
+    >>> bg.area()
     Traceback (most recent call last):
 
     Exception: area() is not implemented
 
 Testing with string
 
-    >>> string = BaseGeometry()
-    >>> string.integer_validator("trial", "oops!")
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("trial", "oops!")
     Traceback (most recent call last):
 
     TypeError: trial must be an integer
