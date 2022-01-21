@@ -1,2 +1,12 @@
 ``base_geometry`` module
 =========================
+
+Using ''BaseGeometry''
+----------------
+
+Import "base_geometry" from "7-base_geometry" associated main file
+
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Using the module:
+
