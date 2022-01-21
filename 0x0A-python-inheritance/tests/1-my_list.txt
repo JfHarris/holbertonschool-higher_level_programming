@@ -1,2 +1,12 @@
 ``my_list`` module
 =========================
+
+Using ''MyList''
+----------------
+
+Import "my_list" from "1-my_list" associated main file
+
+    >>> MyList = __import__('1-my_list').MyList
+
+Using the module:
+
