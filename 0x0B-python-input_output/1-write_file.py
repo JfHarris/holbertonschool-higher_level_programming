@@ -4,9 +4,6 @@ Writes to a file
 """
 
 
-from statistics import mode
-
-
 def write_file(filename="", text=""):
     """
     writes to text file
