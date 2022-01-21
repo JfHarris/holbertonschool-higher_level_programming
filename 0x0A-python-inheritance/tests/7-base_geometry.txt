@@ -14,8 +14,8 @@ Passed tests:
 
 Testing with one int:
 
-    >>> test = BaseGeometry()
-    >>> test.integer_validator("whatever", 22)
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("whatever", 22)
     >>>
 
 Failed tests:
