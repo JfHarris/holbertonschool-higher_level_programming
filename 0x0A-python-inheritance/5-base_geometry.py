@@ -4,11 +4,9 @@
 """
 
 
-from ast import Pass
-
 
 class BaseGeometry:
     """
     empty
     """
-    Pass
+    pass
