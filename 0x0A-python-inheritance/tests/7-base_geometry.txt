@@ -28,3 +28,18 @@ Testing with int <= 0:
 
     ValueError: fail must be greater than 0
 
+Testing method that is not implemented
+
+    >>> methd = BaseGeometry()
+    >>> methd.area()
+    Traceback (most recent call last):
+
+    Exception: area() is not implemented
+
+Testing with string
+
+    >>> string = BaseGeometry()
+    >>> string.integer_validator("trial", "oops!")
+    Traceback (most recent call last):
+
+    TypeError: trial must be an integer
