@@ -16,7 +16,6 @@ Testing with one int:
 
     >>> bg = BaseGeometry()
     >>> bg.integer_validator("whatever", 22)
-    >>>
 
 Failed tests:
 
