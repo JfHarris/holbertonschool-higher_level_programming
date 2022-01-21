@@ -8,6 +8,7 @@ Subclass rectangle with private attributes width and height
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+
 class Rectangle(BaseGeometry):
     """
     inheroits from BaseGeometry
@@ -22,4 +23,4 @@ class Rectangle(BaseGeometry):
         return self.__width * self.__height
 
     def __str__(self):
-        return "{:s} {:d}/{:d}".format(self.__class__.__name__, self.__width, self.__height)
+        return "[{:s}] {:d}/{:d}".format(self.__class__.__name__, self.__width, self.__height)
