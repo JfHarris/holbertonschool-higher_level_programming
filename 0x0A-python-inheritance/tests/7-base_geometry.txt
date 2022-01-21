@@ -10,3 +10,21 @@ Import "base_geometry" from "7-base_geometry" associated main file
 
 Using the module:
 
+Passed tests:
+
+Testing with one int:
+
+    >>> test = BaseGeometry()
+    >>> test.integer_validator("whatever", 22)
+    >>>
+
+Failed tests:
+
+Testing with int <= 0:
+
+    >>> zed = BaseGeometry()
+    >>> zed.integer_validator("fail", 0)
+    Traceback (most recent call last):
+
+    ValueError: fail must be greater than 0
+
