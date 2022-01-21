@@ -42,3 +42,19 @@ Testing with string
     Traceback (most recent call last):
 
     TypeError: trial must be an integer
+
+Testing with no args:
+
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator()
+    Traceback (most recent call last):
+
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+Testing with one arg:
+
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("name")
+    Traceback (most recent call last):
+
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
