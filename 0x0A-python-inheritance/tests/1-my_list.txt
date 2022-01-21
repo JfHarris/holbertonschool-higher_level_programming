@@ -8,5 +8,27 @@ Import "my_list" from "1-my_list" associated main file
 
     >>> MyList = __import__('1-my_list').MyList
 
-Using the module:
+Passed tests:
+
+Using ints:
+
+    >>> new = MyList()
+    >>> new.append(7)
+    >>> new.append(8)
+    >>> new.append(9)
+    >>> print(new)
+    [7, 8, 9]
+
+Mixing up previous ints and sorting
+
+    >>> sort = MyList()
+    >>> sort.append(9)
+    >>> sort.append(7)
+    >>> sort.append(8)
+    >>> print(sort)
+    [9, 7, 8]
+    >>> sort.print_sorted()
+    [7, 8, 9]
+    >>> print(sort)
+    [9, 7, 8]
 
