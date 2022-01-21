@@ -10,6 +10,7 @@ size"""
 
 Rectangle = __import__('9-rectangle').Rectangle
 
+
 class Square(Rectangle):
     """
     inherits from Rectangle which inherits from BaseGeometry
@@ -20,4 +21,5 @@ class Square(Rectangle):
         self.__size = size
 
     def __str__(self):
-        return "[{:s}] {:d}/{:d}".format(self.__class__.__name__, self.__size, self.__size)
+        return "[{:s}] {:d}/{:d}".format
+        (self.__class__.__name__, self.__size, self.__size)
