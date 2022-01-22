@@ -1,45 +1,44 @@
-``base_geometry`` module
-=========================
+base_geometry module
+
 
 Using ''BaseGeometry''
 ----------------
 
 Import "base_geometry" from "7-base_geometry" associated main file
 
-    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 Using the module:
 
-Passed tests:
+    Passed tests:
 
-Testing with one int:
+        Testing with one int:
 
-    >>> bg = BaseGeometry()
-    >>> bg.integer_validator("whatever", 22)
+            bg = BaseGeometry()
+            bg.integer_validator("whatever", 22)
 
 Failed tests:
 
+    bg = BaseGeometry()
+    bg.integer_validator("trial", "oops!")
+    Traceback(most recent call last):
 
-Testing with string
-
-    >>> bg = BaseGeometry()
-    >>> bg.integer_validator("trial", "oops!")
-    Traceback (most recent call last):
-
-    TypeError: trial must be an integer
+        TypeError trial must be an integer
 
 Testing with no args:
 
-    >>> bg = BaseGeometry()
-    >>> bg.integer_validator()
-    Traceback (most recent call last):
+    bg = BaseGeometry()
+    bg.integer_validator()
+    Traceback(most recent call last)
 
-    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+    TypeError integer_validator() missing 2 required positional arguments
+    'name' and 'value'
 
 Testing with one arg:
 
-    >>> bg = BaseGeometry()
-    >>> bg.integer_validator("name")
-    Traceback (most recent call last):
+    bg = BaseGeometry()
+    bg.integer_validator("name")
+    Traceback(most recent call last):
 
-    TypeError: integer_validator() missing 1 required positional argument: 'value'
+        TypeError integer_validator() missing 1 required positional
+        argument 'value'
