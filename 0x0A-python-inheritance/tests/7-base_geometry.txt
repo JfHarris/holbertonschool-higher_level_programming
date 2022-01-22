@@ -19,21 +19,6 @@ Testing with one int:
 
 Failed tests:
 
-Testing with int <= 0:
-
-    >>> bg = BaseGeometry()
-    >>> bg.integer_validator("fail", 0)
-    Traceback (most recent call last):
-
-    ValueError: fail must be greater than 0
-
-Testing method that is not implemented
-
-    >>> bg = BaseGeometry()
-    >>> bg.area()
-    Traceback (most recent call last):
-
-    Exception: area() is not implemented
 
 Testing with string
 
