@@ -12,9 +12,9 @@ Using the module:
 
 >>> bg =  BaseGeometry()
 
->>> bg.integer_validator("width", 22)
+>>> bg.integer_validator("my_int", 22)
 
->>> bg.integer_validator("my_int", 17)
+>>> bg.integer_validator("width", 17)
 
 
 >>> bg.integer_validator("name", "oops!")
