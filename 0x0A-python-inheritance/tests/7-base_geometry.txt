@@ -1,4 +1,12 @@
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+``7-base_geometry`` module
+=========================
+
+Using ''BaseGeometry''
+----------------
+
+Import "base_geometry" from "7-base_geometry" associated main file
+
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 >>> bg =  BaseGeometry()
