@@ -33,3 +33,6 @@ TypeError: area() takes 1 positional argument but 2 were given
 Traceback (most recent call last):
 ValueError: age must be greater than 0
 
+>>> bg.integer_validator("distance", 0)
+Traceback (most recent call last):
+TypeError: distance must be greater than 0
