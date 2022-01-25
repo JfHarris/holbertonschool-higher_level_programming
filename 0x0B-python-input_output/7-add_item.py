@@ -9,11 +9,11 @@ import os.path
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
-name = "add_item.json"
+filename = "add_item.json"
 
 try:
-    prev_info = load_from_json_file(name)
+    prev_info = load_from_json_file(filename)
 except FileNotFoundError:
     prev_info = []
 
-save_to_json_file(prev_info + argv[1:], name)
+save_to_json_file(prev_info + argv[1:], filename)
