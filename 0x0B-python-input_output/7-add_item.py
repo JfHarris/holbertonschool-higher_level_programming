@@ -16,7 +16,7 @@ with open("add_item.json", 'a+') as f:
         json.dump([], f)
 
 new = load_from_json_file("add_item.json")
-for x in range(1,size):
-    new.append(sys.argv[1])
+for x in range(1, size):
+    new.append(sys.argv[x])
 
 save_to_json_file(new, "add_item.json")
