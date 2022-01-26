@@ -7,7 +7,7 @@ class Base
 class Base:
     """
     class = Base
-    private attr = nt_objects = 0
+    private attr = nb_objects = 0
     """
 
     __nb_objects = 0
