@@ -16,4 +16,5 @@ class Square:
         self.x = x
         self.y = y
         super().__init__(id)
-
+# resolve errors
+# add return statement
