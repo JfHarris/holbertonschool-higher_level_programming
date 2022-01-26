@@ -16,3 +16,7 @@ class Rectangle(Base):
         self.x = x
         self.y = y
         super().__init__(id)
+# add setter/getter for private attrs
+# add type errors for non ints
+# add value error for width/height <= 0
+# add value error for x/y under 0
