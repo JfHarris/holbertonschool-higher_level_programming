@@ -13,6 +13,9 @@ class Rectangle(Base):
     private attrs = width, height, x, and y
     """
     def __init__(self, width, height, x=0, y=0, id=None):
+        """
+        setting up Rectangle
+        """
         self.width = width
         self.height = height
         self.x = x
@@ -21,10 +24,16 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """
+        getter for width
+        """
         return self.__width
 
     @width.setter
     def width(self, width):
+        """
+        setter for width
+        """
         if type(width) != int:
             raise TypeError("width must be an integer")
         if width <= 0:
@@ -33,10 +42,16 @@ class Rectangle(Base):
 
     @property
     def height(self):
+        """
+        height getter
+        """
         return self.__height
 
     @height.setter
     def height(self, height):
+        """
+        height setter
+        """
         if type(height) != int:
             raise TypeError("height must be an integer")
         if height <= 0:
@@ -45,10 +60,16 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        """
+        x getter
+        """
         return self.__x
 
     @x.setter
     def x(self, x):
+        """
+        x setter
+        """
         if type(x) != int:
             raise TypeError("x must be an integer")
         if x < 0:
@@ -57,10 +78,16 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        """
+        y getter
+        """
         return self.__y
 
     @y.setter
     def y(self, y):
+        """
+        y setter
+        """
         if type(y) != int:
             raise TypeError("y must be an integer")
         if y < 0:
@@ -68,9 +95,15 @@ class Rectangle(Base):
         self.__y = y
 
     def area(self):
+        """
+        method to get rectangles area
+        """
         return self.__width * self.__height
 
     def display(self):
+        """
+        display rectangle using #
+        """
         htag = ""
         if self.__width != 0 and self.__width != 0:
             htag += "\n" * self.__y
@@ -82,6 +115,9 @@ class Rectangle(Base):
         print(htag)
 
     def __str__(self):
+        """
+        returns description of rectangle
+        """
         id2 = self.id
         x = self.__x
         y = self.__y
@@ -89,21 +125,10 @@ class Rectangle(Base):
         h2 = self.__height
         return "[Rectangle] ({}) {}/{} - {}/{}".format(id2, x, y, w2, h2)
 
-    def update(self, *args):
-        if len(args) > 0:
-            for count, arg in enumerate(args):
-                if count == 0:
-                    self.id = arg
-                elif count == 1:
-                    self.width = arg
-                elif count == 2:
-                    self.height = arg
-                elif count == 3:
-                    self.x = arg
-                elif count == 4:
-                    self.y = arg
-
     def update(self, *args, **kwargs):
+        """
+        assigns args to class attributes
+        """
         if len(args) > 0:
             for count, arg in enumerate(args):
                 if count == 0:
@@ -129,6 +154,9 @@ class Rectangle(Base):
                 self.y = kwargs["y"]
 
     def to_dictionary(self):
+        """
+        returns dict of Rectangle
+        """
         id2 = self.id
         x = self.__x
         y = self.__y
