@@ -70,3 +70,14 @@ class Rectangle(Base):
 
     def area(self):
         return self.__width * self.__height
+
+    def display(self):
+        htag = ""
+        if self.__width != 0 and self.__width != 0:
+            htag += "\n" * self.__y
+            for x in range(self.__height):
+                htag += " " * self.__x
+                htag +=("#" * self.__width)
+                if x != self.__height - 1:
+                    htag += "\n"
+        print(htag)
