@@ -81,3 +81,11 @@ class Rectangle(Base):
                 if x != self.__height - 1:
                     htag += "\n"
         print(htag)
+
+    def __str__(self):
+        id2 = self.id
+        x = self.__x
+        y = self.__y
+        w2 = self.__width
+        h2 = self.__height
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(id2, x, y, w2, h2)
