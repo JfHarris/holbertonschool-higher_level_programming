@@ -5,6 +5,8 @@ class Rectangle
 
 
 from models.base import Base
+
+
 class Rectangle(Base):
     """
     class = Rectangle
@@ -74,7 +76,7 @@ class Rectangle(Base):
             htag += "\n" * self.__y
             for x in range(self.__height):
                 htag += " " * self.__x
-                htag +=("#" * self.__width)
+                htag += ("#" * self.__width)
                 if x != self.__height - 1:
                     htag += "\n"
         print(htag)
@@ -100,4 +102,3 @@ class Rectangle(Base):
                     self.x = arg
                 elif count == 4:
                     self.y = arg
-
