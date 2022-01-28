@@ -16,10 +16,7 @@ class Rectangle(Base):
         self.x = x
         self.y = y
         super().__init__(id)
-# add setter/getter for private attrs
-# add type errors for non ints
-# add value error for width/height <= 0
-# add value error for x/y under 0
+
     @property
     def width(self):
         return self.__width
@@ -93,14 +90,14 @@ class Rectangle(Base):
     def update(self, *args):
         if len(args) > 0:
             for count, arg in enumerate(args):
-                if count == 1:
+                if count == 0:
                     self.id = arg
-                elif count == 2:
+                elif count == 1:
                     self.width = arg
-                elif count == 3:
+                elif count == 2:
                     self.height = arg
-                elif count == 4:
+                elif count == 3:
                     self.x = arg
-                elif count == 5:
+                elif count == 4:
                     self.y = arg
 
