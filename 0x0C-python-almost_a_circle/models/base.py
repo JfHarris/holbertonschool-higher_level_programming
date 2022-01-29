@@ -11,6 +11,8 @@ class Base:
     class = Base
     public attr = nb_objects = 0
     """
+    __nb_objects = 0
+
     @classmethod
     def clear(cls):
         """Sets the variable to 0 for unittesting"""
