@@ -96,17 +96,6 @@ class TestClassSquare(unittest.TestCase):
             s1 = Square(-10)
 
 
-class NewTest(unittest.TestCase):
-    def test_id(self):
-        """
-        Test that the id of the square is correct
-        """
-        s1 = Square(10)
-        self.assertEqual(s1.id, 1)
-        s2 = Square(10, 0, 0, 12)
-        self.assertEqual(s2.id, 12)
-
-
 class SizeTest(unittest.TestCase):
     def test_None_size(self):
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
