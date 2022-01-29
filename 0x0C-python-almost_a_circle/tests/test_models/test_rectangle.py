@@ -222,7 +222,9 @@ class TestRectangle(unittest.TestCase):
         """
         with self.assertRaisesRegex(TypeError, "height must be an integer"):
             self.inst.height = "Height Error"
+
 # break
+
     def test_pep8_conformance_rectangle(self):
         """Test that models/rectangle.py conforms to PEP8."""
         pep8style = pep8.StyleGuide(quiet=True)
