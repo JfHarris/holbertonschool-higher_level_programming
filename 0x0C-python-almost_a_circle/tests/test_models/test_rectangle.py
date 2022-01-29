@@ -194,5 +194,33 @@ class TestRectangle(unittest.TestCase):
         """
         self.assertEqual(self.inst.y, 4)
 
+    def test_raise_y(self):
+        """
+        test raise y error
+        """
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            self.inst.y = "Y Error"
+
+    def test_raise_x(self):
+        """
+        test raise x error
+        """
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            self.inst.x = "X Error"
+
+    def test_raise_width(self):
+        """
+        test raise width error
+        """
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            self.inst.width = "Width Error"
+
+    def test_raise_height(self):
+        """
+        test raise heigt
+        """
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            self.inst.height = "Height Error"
+
 if __name__ == '__main__':
     unittest.main()
