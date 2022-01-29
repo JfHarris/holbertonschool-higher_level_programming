@@ -14,7 +14,7 @@ class Base:
     @classmethod
     def clear(cls):
         """Sets the variable to 0 for unittesting"""
-        Base.__nb_object = 0
+        Base.__nb_objects = 0
 
     def __init__(self, id=None):
         """
@@ -23,8 +23,8 @@ class Base:
         if id is not None:
             self.id = id
         else:
-            Base.__nb_object += 1
-            self.id = self.__nb_object
+            Base.__nb_objects += 1
+            self.id = self.__nb_objects
 
     @staticmethod
     def to_json_string(list_dictionaries):
