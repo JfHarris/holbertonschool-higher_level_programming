@@ -1,0 +1,2 @@
+--  script that creates table
+-- unique_id on your MySQL server.
