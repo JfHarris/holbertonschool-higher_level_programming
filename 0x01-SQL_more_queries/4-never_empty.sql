@@ -1,0 +1,2 @@
+-- script that creates table
+--id_not_null on your MySQL server.
