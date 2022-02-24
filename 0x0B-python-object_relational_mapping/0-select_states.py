@@ -12,7 +12,7 @@ if __name__ == "__main__":
                         port=3306,
                         user=sys.argv[1],
                         passwd=sys.argv[2],
-                        db=sys.argv[3])
+                        datab=sys.argv[3])
 
     cur = db.cursor()
 
