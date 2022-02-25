@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Lists all states with name starting with capital N
+Lists all states with name starting with N
 """
 
 
