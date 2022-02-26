@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-prints the first State object from the database hbtn_0e_6_usa
+prints State object with name passed as arg from hbtn_0e_6_usa
 """
 
 

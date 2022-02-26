@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-prints the first State object from the database hbtn_0e_6_usa
+deletes State objects with name containing a from hbtn_0e_6_usa
 """
 
 
