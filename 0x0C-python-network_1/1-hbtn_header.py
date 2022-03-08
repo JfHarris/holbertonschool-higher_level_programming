@@ -4,7 +4,6 @@ Displays the value of x-request-id
 """
 
 
-
 if __name__ == '__main__':
     import urllib.parse
     import urllib.request
