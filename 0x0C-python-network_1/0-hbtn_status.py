@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-'''This module fetches a URL with urllib'''
+"""
+Fetches a URL with urllib
+"""
 
 
 if __name__ == '__main__':
