@@ -4,11 +4,14 @@ Fetches a URL with urllib
 """
 
 
-if __name__ == '__main__':
-    import urllib.request
-    import urllib.parse
+from flask import request
 
-    with urllib.request.urlopen('https://intranet.hbtn.io/status') as response:
+
+if __name__ == '__main__':
+    from urllib import request
+
+    addy = 'https://intranet.hbtn.io/status'
+    with request.urlopen(addy) as response:
         html = response.read()
         print('Body response:')
         print('\t- type: {}'.format(type(html)))
