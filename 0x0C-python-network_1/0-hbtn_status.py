@@ -4,9 +4,6 @@ Fetches a URL with urllib
 """
 
 
-from flask import request
-
-
 if __name__ == '__main__':
     from urllib import request
 
