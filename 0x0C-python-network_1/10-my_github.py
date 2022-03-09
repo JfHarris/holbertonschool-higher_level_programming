@@ -14,6 +14,6 @@ if __name__ == '__main__':
     token = sys.argv[2]
     form = {'state': 'open'}
     url = 'https://api.github.com/user'
-    new_req = requests.get(url, auth=HTTPBasicAuth(username, token) ,form=form)
+    new_req = requests.get(url, auth=HTTPBasicAuth(username, token), form=form)
     ans = new_req.json()
     print(ans.get('id'))
