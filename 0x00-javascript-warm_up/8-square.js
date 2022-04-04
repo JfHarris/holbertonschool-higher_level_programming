@@ -6,5 +6,5 @@ if (parseInt(sqSize)) {
     console.log(sqChar.repeat(sqSize));
   }
 } else {
-    console.log('Missing size');
+  console.log('Missing size');
 }
