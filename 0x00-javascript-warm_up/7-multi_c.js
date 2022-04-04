@@ -3,7 +3,7 @@ const strs = 'C is fun';
 const inte = process.argv[2];
 let x = 0;
 if (parseInt(inte)) {
-  while (i < intte) {
+  while (i < inte) {
     console.log(strs);
     x++;
   }
