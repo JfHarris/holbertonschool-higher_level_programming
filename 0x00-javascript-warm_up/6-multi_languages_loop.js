@@ -4,4 +4,4 @@ let x = 0;
 while (x < strs.length) {
   console.log(strs[x]);
   x++;
-}
+};

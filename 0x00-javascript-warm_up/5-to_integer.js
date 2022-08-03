@@ -4,4 +4,4 @@ if (inte) {
   console.log('My number: ' + inte);
 } else {
   console.log('Not a number');
-}
+};
