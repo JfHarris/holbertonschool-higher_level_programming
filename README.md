@@ -15,6 +15,7 @@ __Author__::pencil:
 Jeff Harris
 
 __Not ncluded in this repository:__
+
 The AirBnB series of projects:
 1. [AirBnB Clone v1](https://github.com/JfHarris/AirBnB_clone)
     * co-author: [Hayden Cooper](https://github.com/ZugustheDugus)
