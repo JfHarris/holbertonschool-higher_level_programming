@@ -7,4 +7,3 @@ def simple_delete(a_dictionary, key=""):
     if a:
         del a_dictionary[key]
     return(a_dictionary)
-
